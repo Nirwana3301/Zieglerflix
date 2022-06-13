@@ -1,0 +1,23 @@
+:root {
+  --darkBackground: #141414;
+  --netflixRed: #e50914;
+}
+
+body,
+html {
+  background: var(--darkBackground);
+  color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
