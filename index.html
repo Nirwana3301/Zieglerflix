@@ -14,16 +14,45 @@
     <link href="/assets/fontawesome/css/all.css" rel="stylesheet" />
   </head>
   <body>
-    <section style="text-align: center; margin-top: 40vh">
-      <h1 style="margin-bottom: 2rem; font-size: 3rem">
-        Hier soll ein Netflix Clone entstehen
-      </h1>
-      <h2>Viel Erfolg! 🎉</h2>
+    <section class="popular">
+      <header class="container">Beliebt auf Netflix</header>
+      <div class="movielistslider">
+        <button type="button" class="moveleft btnnav">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button type="button" class="moveright btnnav">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="indicators"></div>
+        <div class="movielist"></div>
+      </div>
+    </section>
+    <section id="contact-from">
+      <div class="contact-container">
+        <div class="text"><p>Registrieren</p></div>
+        <div class="input-container">
+          <div class="label-wrapper"><label> Vorname: </label></div>
+          <input type="text" />
+        </div>
+        <div class="input-container">
+          <div class="label-wrapper"><label> Nachname: </label></div>
+          <input type="text" />
+        </div>
+        <div class="input-container">
+          <div class="label-wrapper"><label> Email: </label></div>
+          <input type="email" />
+        </div>
+        <div class="input-container">
+          <div class="label-wrapper"><label> Passwort: </label></div>
+          <input type="password" />
+        </div>
+        <div class="button-wrapper">
+          <button class="submit" type="submit">ABSENDEN</button>
+        </div>
+      </div>
     </section>
   </body>
 
-  <script type="module" src="/script.js"></script>
   <script type="module" src="/movieListSlider.js"></script>
+  <script type="module" src="/script.js"></script>
 </html>
-
-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

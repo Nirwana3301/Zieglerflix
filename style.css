@@ -21,3 +21,76 @@ html {
   width: 90%;
   margin: auto;
 }
+
+.contact-form {
+  width: 100%;
+}
+
+.contact-container {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+}
+
+.text {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 8px;
+  width: 70%;
+}
+
+.label-wrapper {
+  background-color: var(--netflixRed);
+  text-align: left;
+  display: flex;
+  width: 30%;
+}
+
+label {
+  padding-top: 5px;
+  height: 30px;
+  border-top: none;
+  border-left: 10px solid var(--netflixRed);
+  border-radius: 10%;
+}
+
+input {
+  width: 70%;
+  height: 29px;
+  border: none;
+}
+
+.button-wrapper {
+  width: 70%;
+  position: relative;
+}
+
+.submit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.movielist {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+.movielistitem:hover {
+  zoom: 110%;
+}
