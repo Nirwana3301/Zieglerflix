@@ -1,6 +1,8 @@
 :root {
   --darkBackground: #141414;
   --netflixRed: #e50914;
+  --grey: #585858;
+  --darkgrey: #2f2f2f;
 }
 
 body,
@@ -8,7 +10,7 @@ html {
   background: var(--darkBackground);
   color: #e5e5e5;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 100px;
+  font-size: 62.5%;
 }
 
 * {
@@ -17,80 +19,347 @@ html {
   box-sizing: border-box;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
+button {
+  cursor: pointer;
 }
 
-.contact-form {
+.navbar {
+  background: var(--darkBackground);
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  padding-top: 2rem;
+}
+
+.nav-logo img {
+  width: 10rem;
+  margin-left: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--drkBackground);
+  font-size: 2rem;
+}
+
+li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.nav-left li {
+  float: left;
+}
+
+.nav-right li {
+  float: right;
+}
+
+.user {
+  margin-right: 2rem;
+  margin-top: -0.3rem;
+}
+
+.user img {
+  display: flex;
+  width: 3rem;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  opacity: 0.7;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  margin-bottom: -10rem;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+.main-img {
+  z-index: 100;
+}
+
+.main-img img {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  width: 50rem;
+  height: auto;
+}
+
+.sub-img {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  width: 28rem;
+  left: 5.3%;
+  top: 57%;
+}
+
+.sub-img img {
+  width: 10%;
+  height: auto;
+}
+
+.info-img-text {
+  padding-top: 0.3rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.info-text {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 5.3%;
+  top: 62%;
+  width: 40rem;
+}
+
+.info-button-wrapper {
+  position: absolute;
+  left: 5.3%;
+  top: 70%;
+  display: flex;
+}
+
+.play-btn {
+  width: 13rem;
+  height: 5rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid white;
+  display: flex;
+}
+
+.info-btn {
+  width: 16rem;
+  height: 5rem;
+  background-color: var(--grey);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--grey);
+  display: flex;
+}
+
+.play-btn i,
+.info-btn i {
+  width: 3rem;
+  font-size: 2.5rem;
+  padding-right: 1rem;
+}
+
+.play-btn span,
+.info-btn span {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.age {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  font-size: 2rem;
+  z-index: 100;
+  width: 6rem;
+  height: 4rem;
+  background-color: var(--darkgrey);
+  border-left: 0.4rem solid white;
+  display: flex;
+}
+
+.age span {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-left: 0.8rem;
+}
+
+.popular,
+.mylist,
+.watchagain {
+  width: 100%;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.head {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 7rem;
+}
+
+.movielist-wrapper {
   width: 100%;
 }
 
-.contact-container {
-  width: 80%;
+.movielist-wrapper:hover .btnnav {
   display: block;
+}
+
+.movielistslider {
+  width: 100%;
   margin-left: auto;
+  margin-right: auto;
+}
+
+.button-slider {
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.btnnav {
+  width: 3%;
+  height: 19.3rem;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btnnav i {
+  font-size: 3rem;
+  color: #e5e5e5;
+}
+
+.moveleft {
+  left: 0;
+}
+
+.moveright {
+  right: 0;
+}
+
+.movielist {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.movielistitem {
+  margin-right: 0.8rem;
+}
+
+#contact-form {
+  width: 100%;
+  margin-top: 15rem;
+}
+
+.contact-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text {
-  margin-top: 25px;
-  margin-left: auto;
-  margin-bottom: 8px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .input-container {
   display: flex;
-  margin-bottom: 8px;
-  width: 70%;
+  margin-bottom: 0.8rem;
+  width: 100%;
 }
 
 .label-wrapper {
   background-color: var(--netflixRed);
   text-align: left;
   display: flex;
-  width: 30%;
+  width: 35%;
 }
 
 label {
-  padding-top: 5px;
-  height: 30px;
-  border-top: none;
-  border-left: 10px solid var(--netflixRed);
-  border-radius: 10%;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
 }
 
 input {
-  width: 70%;
-  height: 29px;
+  width: 65%;
+  height: 2.9rem;
   border: none;
+  padding-left: 1rem;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+input:focus {
+  outline: none;
+  padding-left: 1rem;
 }
 
 .button-wrapper {
-  width: 70%;
-  position: relative;
+  width: 100%;
 }
 
 .submit {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
-  height: 30px;
+  height: 4rem;
   background-color: white;
-  border: 2px solid white;
-  border-radius: 5px;
-  margin-top: 20px;
+  border: 0.2rem solid white;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
-.movielist {
-  display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
-  overflow: hidden;
+.rick-wrapper {
+  position: relative;
 }
 
-.movielistitem:hover {
-  zoom: 110%;
+.rick-text {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left: 1rem;
+  bottom: 8rem;
+  right: 30rem;
+  width: 30rem;
+}
+
+.rick {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.morty {
+  width: 15rem;
 }

@@ -14,21 +14,111 @@
     <link href="/assets/fontawesome/css/all.css" rel="stylesheet" />
   </head>
   <body>
-    <section class="popular">
-      <header class="container">Beliebt auf Netflix</header>
-      <div class="movielistslider">
-        <button type="button" class="moveleft btnnav">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button type="button" class="moveright btnnav">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <div class="indicators"></div>
-        <div class="movielist"></div>
+    <section class="navbar">
+      <ul>
+        <div class="nav-left">
+        <li><a class="nav-logo" href=""><img src="assets/img/Netflix_logo.svg" alt="Logo"></a></li>
+        <li><a href="">Startseite</a></li>
+        <li><a href="">Serien</a></li>
+        <li><a href="">Filme</a></li>
+        <li><a href="">Neu und beliebt</a></li>
+        <li><a href="">Meine Liste</a></li>
+      </div>
+      <div class="nav-right">
+        <li><a class="user" href="https://www.ziegler.global/"><img src="assets/img/ziegler_logo.png"></a></li>
+        <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+      </div>
+      </ul>
+    </section>
+    <section class="hero">
+      <div class="background">
+        <video autoplay muted loop class="video">
+          <source
+            src="assets/video/Lincoln_Lawyer_Trailer.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="info-wrapper">
+        <div class="main-img">
+          <img
+            src="assets/img/lincoln_lawer.webp"
+            alt="Lincoln Lawyer"
+          />
+        </div>
+        <div class="sub-img">
+          <img src="assets/img/top10.svg" alt="Top 10"></img>
+          <span class="info-img-text">Heute die Nr. 3 der Serien</span>
+        </div>
+        <div class="info-text"><p>Mickey haller, ein erfolgreicher Anwalt aus Los Angeles, setzt mit einem Mordfall nach einem Unfall seine Karriere -- und sein Lincoln Town Car -- wieder in Gang. </p></div>
+        <div class="info-button-wrapper">
+          <button onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';" type="button" class="play-btn">
+            <i class="fas fa-play"></i>
+            <span>Abspielen</span>
+          </button>
+          <button onclick="window.location.href = 'https://de.wikipedia.org/wiki/Rick_Astley';" type="button" class="info-btn">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Weitere Infos</span>
+          </button>
+        </div>
+      </div>
+      <div class="age">
+        <span>12</span>
       </div>
     </section>
-    <h1>Testcommit</h1>
-    <section id="contact-from">
+    <section class="popular">
+      <header class="head">Beliebt auf Netflix</header>
+      <div class="movielist-wrapper">
+        <div class="button-slider">
+          <button type="button" class="moveleft btnnav">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button type="button" class="moveright btnnav">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="movielistslider">
+          <div class="indicators"></div>
+          <div class="movielist"></div>
+        </div>
+      </div>
+    </section>
+    <section class="mylist">
+      <header class="head">Meine Liste</header>
+      <div class="movielist-wrapper">
+        <div class="button-slider">
+          <button type="button" class="moveleft btnnav">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button type="button" class="moveright btnnav">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="movielistslider">
+          <div class="indicators"></div>
+          <div class="movielist"></div>
+        </div>
+      </div>
+    </section>
+    <section class="watchagain">
+      <header class="head">Nochmal ansehen</header>
+      <div class="movielist-wrapper">
+        <div class="button-slider">
+          <button type="button" class="moveleft btnnav">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button type="button" class="moveright btnnav">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="movielistslider">
+          <div class="indicators"></div>
+          <div class="movielist"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact-form">
       <div class="contact-container">
         <div class="text"><p>Registrieren</p></div>
         <div class="input-container">
@@ -50,6 +140,11 @@
         <div class="button-wrapper">
           <button class="submit" type="submit">ABSENDEN</button>
         </div>
+      </div>
+      <div class="rick-wrapper">
+        <p class="rick-text">Oh my god Morty. Look at this page. It's not responsive! *burp*</p>
+        <img class="rick" src="assets/img/rick.png" alt="Rick">
+        <img class="morty" src="assets/img/morty.png" alt="Morty">
       </div>
     </section>
   </body>
